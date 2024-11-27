@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Melhores Avaliações</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Acervo de Filmes</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="oscar.html">Oscar</a></li>
+          <li class="nav-item"><a class="nav-link" href="melhores-avaliacoes.html">Melhores Avaliações</a></li>
+          <li class="nav-item"><a class="nav-link" href="curiosidades.html">Curiosidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="recomendacoes.html">Recomendações</a></li>
+        </ul>
+      </div>
+  
+      <button class="btn btn-primary ms-auto" data-bs-toggle="modal" data-bs-target="#loginModal">Cadastre-se</button>
+    </div>
+  </nav>
+  
+ 
+  <div class="container mt-4">
+    <h1>Melhores Avaliações</h1>
+    <p>Veja os filmes mais bem avaliados, segundo o IMDb!</p>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="card">
+          <img src="imagens/um-sonho-de-liberdade.jpg" class="card-img-top" alt="Um sonho de liberdade">
+          <div class="card-body">
+            <h5 class="card-title">Um sonho de liberdade</h5>
+            <p class="card-text">Nota: 9.3</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card">
+          <img src="imagens/poderoso-chefao-filme.jpg" class="card-img-top" alt="O Poderoso Chefão">
+          <div class="card-body">
+            <h5 class="card-title">O Poderoso Chefão</h5>
+            <p class="card-text">Nota: 9.2</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card">
+          <img src="imagens/o-cavaleiro-das-trevas.jpg" class="card-img-top" alt="Batman: O Cavaleiro das Trevas">
+          <div class="card-body">
+            <h5 class="card-title">Batman: O Cavaleiro das Trevas</h5>
+            <p class="card-text">Nota: 9.o</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card">
+          <img src="imagens/doze-homens.jpeg" class="card-img-top" alt="Doze Homens e uma Sentença">
+          <div class="card-body">
+            <h5 class="card-title">Doze Homens e uma Sentença</h5>
+            <p class="card-text">Nota: 8.9</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card">
+          <img src="imagens/a-lista-de-Schindler.jpg" class="card-img-top" alt="A Lista de Schindler">
+          <div class="card-body">
+            <h5 class="card-title">A Lista de Schindler</h5>
+            <p class="card-text">Nota: 8.9</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card">
+          <img src="imagens/clube-da-luta.jpg" class="card-img-top" alt="O Clube da Luta">
+          <div class="card-body">
+            <h5 class="card-title">O Clube da Luta</h5>
+            <p class="card-text">Nota: 8.8</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card">
+          <img src="imagens/forrest-gump.jpg" class="card-img-top" alt="Forrest Gump">
+          <div class="card-body">
+            <h5 class="card-title">Forrest Gump</h5>
+            <p class="card-text">Nota: 8.8</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Cadastro</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="nome" class="form-label">Nome</label>
+              <input type="text" class="form-control" id="nome" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="senha" class="form-label">Senha</label>
+              <input type="password" class="form-control" id="senha" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

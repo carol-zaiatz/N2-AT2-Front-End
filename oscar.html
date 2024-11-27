@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oscar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .card img {
+      width: 100%; 
+      height: 250px; 
+      object-fit: cover; 
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Acervo de Filmes</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="oscar.html">Oscar</a></li>
+          <li class="nav-item"><a class="nav-link" href="melhores-avaliacoes.html">Melhores Avaliações</a></li>
+          <li class="nav-item"><a class="nav-link" href="curiosidades.html">Curiosidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="recomendacoes.html">Recomendações</a></li>
+        </ul>
+      </div>
+      <button class="btn btn-primary ms-auto" data-bs-toggle="modal" data-bs-target="#loginModal">Cadastre-se</button>
+    </div>
+  </nav>
+
+  <div class="container mt-4">
+    <h1>Filmes Indicados ao Oscar</h1>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="card">
+          <img src="imagens/12anosdeescravidao.jpeg" class="card-img-top" alt="Filme 1">
+          <div class="card-body">
+            <h5 class="card-title">12 Anos de Escravidão</h5>
+            <p class="card-text">2022</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card">
+          <img src="imagens/a-forma-da-agua.jpg" class="card-img-top" alt="Filme 2">
+          <div class="card-body">
+            <h5 class="card-title">A Forma da Água</h5>
+            <p class="card-text">2021</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card">
+          <img src="imagens/argo.png" class="card-img-top" alt="Filme 3">
+          <div class="card-body">
+            <h5 class="card-title">Argo</h5>
+            <p class="card-text">2020</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card">
+          <img src="imagens/birdman.jpg" class="card-img-top" alt="Filme 3">
+          <div class="card-body">
+            <h5 class="card-title">Birdman</h5>
+            <p class="card-text">2020</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card">
+          <img src="imagens/greenbook.jpeg" class="card-img-top" alt="Filme 3">
+          <div class="card-body">
+            <h5 class="card-title">Greenbook</h5>
+            <p class="card-text">2020</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card">
+          <img src="imagens/moonlight.png" class="card-img-top" alt="Filme 3">
+          <div class="card-body">
+            <h5 class="card-title">Moonlight</h5>
+            <p class="card-text">2020</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card">
+          <img src="imagens/spotlight.jpg" class="card-img-top" alt="Filme 3">
+          <div class="card-body">
+            <h5 class="card-title">Spotlight</h5>
+            <p class="card-text">2020</p>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Cadastro</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="nome" class="form-label">Nome</label>
+              <input type="text" class="form-control" id="nome" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="senha" class="form-label">Senha</label>
+              <input type="password" class="form-control" id="senha" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

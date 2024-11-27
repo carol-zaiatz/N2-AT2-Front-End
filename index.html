@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acervo de Filmes</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Acervo de Filmes</a>
+  
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="oscar.html">Oscar</a></li>
+          <li class="nav-item"><a class="nav-link" href="melhores-avaliacoes.html">Melhores Avaliações</a></li>
+          <li class="nav-item"><a class="nav-link" href="curiosidades.html">Curiosidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="recomendacoes.html">Recomendações</a></li>
+        </ul>
+      </div>
+  
+      <button class="btn btn-primary ms-auto" data-bs-toggle="modal" data-bs-target="#loginModal">Cadastre-se</button>
+    </div>
+  </nav>
+ 
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="imagens/StarWars.jpg" class="d-block w-100" alt="Filme 1">
+      </div>
+      <div class="carousel-item">
+        <img src="imagens/senhor-dos-aneis.jpg" class="d-block w-100" alt="Filme 2">
+      </div>
+      <div class="carousel-item">
+        <img src="imagens/poderoso-chefao.jpg" class="d-block w-100" alt="Filme 3">
+      </div>
+      <div class="carousel-item">
+        <img src="imagens/jogos-vorazes.png" class="d-block w-100" alt="Filme 3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+  </div>
+
+  <div class="container mt-4">
+    <h1>Bem-vindo ao Acervo de Filmes</h1>
+    <p>Aqui você encontra tudo sobre os melhores filmes, incluindo vencedores do Oscar, filmes com melhores avaliações, curiosidades cinematográficas e nossas recomendações diárias. Explore e aproveite!</p>
+  </div>
+
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Cadastro</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="nome" class="form-label">Nome</label>
+              <input type="text" class="form-control" id="nome" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="senha" class="form-label">Senha</label>
+              <input type="password" class="form-control" id="senha" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
